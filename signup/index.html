@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -55,5 +55,11 @@
         </section>
         <img src="../assets/img/costela-de-adao.png" alt="foto de uma planta costela de adão">
     </main>
+    <script>
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Cadastro realizado com sucesso!");
+    });
+  </script>
 </body>
 </html>

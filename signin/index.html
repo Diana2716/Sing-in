@@ -53,41 +53,11 @@
         </section>
         <img src="../assets/img/costela-de-adao.png" alt="foto de uma planta costela de adão">
     </main>
-<script>
-    const API_URL = "http://localhost:8080"; // ajuste conforme sua porta Spring Boot
-
-    async function cadastrarUsuario() {
-      const nome = document.getElementById("nome").value;
-      const email = document.getElementById("emailCadastro").value;
-      const senha = document.getElementById("senhaCadastro").value;
-
-      const user = { name: nome, email: email, password: senha };
-
-      const response = await fetch(`${API_URL}/Usuario/cadastro`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(user)
-      });
-
-      const data = await response.json();
-      document.getElementById("mensagem").innerText = "Usuário cadastrado: " + data.name;
-    }
-
-    async function fazerLogin() {
-      const email = document.getElementById("emailLogin").value;
-      const senha = document.getElementById("senhaLogin").value;
-
-      const user = { email: email, password: senha };
-
-      const response = await fetch(`${API_URL}/login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(user)
-      });
-
-      const data = await response.text(); // login retorna texto simples
-      document.getElementById("mensagem").innerText = data;
-    }
-  </script>
+    <script>
+         document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Login realizado com sucesso!");
+       });
+    </script>
 </body>
 </html>
