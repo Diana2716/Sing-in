@@ -28,12 +28,12 @@
     font-weight: 500;
     margin-top: 10px;
     color: var(--black)
- }
-
- form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+   }
+   
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     margin-top: 60px;
  }
 
@@ -54,10 +54,13 @@ fieldset {
    font-size: 9px;
 }
 
-button {
+form button {
    height: 35.4px;
    background-color: var(--green);
    color: var(--white);
+   border-radius: 10px;
+   font-weight: 700;
+   font-style: normal;
 }
 
 .title-wrapper {
@@ -103,8 +106,9 @@ button {
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 2px solid red;
+   border: 2px;
    gap: 4.5px;
+   margin-top: 59px;
  }
 
  .line {
@@ -119,3 +123,41 @@ button {
    color: var(--black);
    font-weight: 500;
  }
+
+.sso-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 23px;
+   margin-top: 89px;
+}
+
+.sso-container img {
+   width: 24px;
+   height: 24px;
+}
+
+.sso-container button {
+   height: 32px;
+   gap: 10px;
+   padding: 4px 24px;
+   border: 1px solid var(--border-gray);
+   border-radius: 10px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+}
+
+.redirect-sign-up {
+   font-size: 14px !important;
+   color: var(--black);
+   justify-content: center;
+   margin-top: 22px;
+}
+
+.redirect-sign-up p a {
+   font-size: 14px;
+   color: var(--blue);
+}
